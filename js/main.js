@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardTilt();
   initScrollProgress();
   initHeroCanvas();
+  initFAQ();
 });
 
 /* ========================
@@ -452,4 +453,32 @@ function initHeroCanvas() {
 
   resize();
   draw();
+}
+
+/* ========================
+   NEW: FAQ Accordion
+   ======================== */
+function initFAQ() {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  if (!faqQuestions.length) return;
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const isExpanded = question.getAttribute('aria-expanded') === 'true';
+      
+      // Close all others
+      faqQuestions.forEach(q => {
+        q.setAttribute('aria-expanded', 'false');
+        const answer = q.nextElementSibling;
+        answer.style.maxHeight = null;
+      });
+
+      // Toggle current
+      if (!isExpanded) {
+        question.setAttribute('aria-expanded', 'true');
+        const answer = question.nextElementSibling;
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
 }
