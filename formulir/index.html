@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Pendaftaran Sekolah — SchoolPro</title>
+  <meta name="description" content="Daftarkan sekolah Anda ke SchoolPro — Platform Manajemen Sekolah All-in-One. Isi formulir pendaftaran dan tim kami akan menindaklanjuti.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================
+       Background Decoration
+       ======================== -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- ========================
+       Header
+       ======================== -->
+  <header class="form-header">
+    <div class="container">
+      <a href="https://schoolpro.id" class="brand" aria-label="SchoolPro Home">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+          <defs><linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs>
+          <rect width="32" height="32" rx="8" fill="url(#brand-grad)"/>
+          <text x="16" y="22" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">S</text>
+        </svg>
+        School<span>Pro</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="form-main">
+    <div class="container">
+
+      <!-- ========================
+           Hero / Intro
+           ======================== -->
+      <section class="form-intro" id="form-intro">
+        <div class="intro-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Formulir Pendaftaran Sekolah
+        </div>
+        <h1>Daftarkan Sekolah Anda <br><span class="gradient-text">ke SchoolPro</span></h1>
+        <p class="intro-description">
+          Isi informasi berikut dengan data yang paling mudah dihubungi dan dipahami oleh tim sekolah Anda.
+        </p>
+        <div class="intro-meta">
+          <div class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <span class="meta-label">Waktu pengisian</span>
+              <span class="meta-value">Sekitar 3–5 menit</span>
+            </div>
+          </div>
+          <div class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <div>
+              <span class="meta-label">Siapkan</span>
+              <span class="meta-value">Kontak sekolah dan PIC</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================
+           Form
+           ======================== -->
+      <form class="registration-form" id="registration-form" novalidate>
+
+        <!-- ====== Section 1: Profil Sekolah ====== -->
+        <section class="form-section" id="section-profil">
+          <div class="section-header">
+            <div class="section-number">1</div>
+            <div>
+              <h2>Profil sekolah</h2>
+              <p>Ceritakan identitas sekolah Anda agar kami bisa memahami konteks dan skala kebutuhan.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- Nama Sekolah -->
+            <div class="form-group form-group--full">
+              <label for="nama_sekolah">Nama sekolah <span class="required">*</span></label>
+              <input type="text" id="nama_sekolah" name="nama_sekolah" placeholder="SMA Islam Contoh" required>
+            </div>
+
+            <!-- Jenjang -->
+            <div class="form-group">
+              <label for="jenjang">Jenjang <span class="required">*</span></label>
+              <div class="select-wrapper">
+                <select id="jenjang" name="jenjang" required>
+                  <option value="" disabled selected>Pilih jenjang</option>
+                  <option value="TK">TK / RA</option>
+                  <option value="SD">SD / MI</option>
+                  <option value="SMP">SMP / MTs</option>
+                  <option value="SMA">SMA / MA</option>
+                  <option value="SMK">SMK</option>
+                  <option value="Pesantren">Pesantren</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+                <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
+
+            <!-- Status Sekolah -->
+            <div class="form-group">
+              <label for="status_sekolah">Status sekolah <span class="required">*</span></label>
+              <div class="select-wrapper">
+                <select id="status_sekolah" name="status_sekolah" required>
+                  <option value="" disabled selected>Pilih status</option>
+                  <option value="Negeri">Negeri</option>
+                  <option value="Swasta">Swasta</option>
+                </select>
+                <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
+
+            <!-- NPSN -->
+            <div class="form-group">
+              <label for="npsn">NPSN <span class="optional">Opsional</span></label>
+              <input type="text" id="npsn" name="npsn" placeholder="20200000">
+            </div>
+
+            <!-- Email Sekolah -->
+            <div class="form-group">
+              <label for="email_sekolah">Email sekolah <span class="required">*</span></label>
+              <input type="email" id="email_sekolah" name="email_sekolah" placeholder="info@sekolah.sch.id" required>
+            </div>
+
+            <!-- Telepon Sekolah -->
+            <div class="form-group">
+              <label for="telepon_sekolah">Telepon sekolah <span class="required">*</span></label>
+              <input type="tel" id="telepon_sekolah" name="telepon_sekolah" placeholder="021xxxxxxx" required>
+            </div>
+
+            <!-- Provinsi -->
+            <div class="form-group">
+              <label for="provinsi">Provinsi <span class="required">*</span></label>
+              <input type="text" id="provinsi" name="provinsi" placeholder="Jawa Barat" required>
+            </div>
+
+            <!-- Kota -->
+            <div class="form-group">
+              <label for="kota">Kota / kabupaten <span class="required">*</span></label>
+              <input type="text" id="kota" name="kota" placeholder="Bandung" required>
+            </div>
+
+            <!-- Website -->
+            <div class="form-group">
+              <label for="website">Website saat ini <span class="optional">Opsional</span></label>
+              <input type="url" id="website" name="website" placeholder="https://www.sekolah.sch.id">
+              <span class="form-hint">Jika sudah ada, isi alamat website sekolah</span>
+            </div>
+
+            <!-- Estimasi Jumlah Siswa -->
+            <div class="form-group">
+              <label for="jumlah_siswa">Estimasi jumlah siswa <span class="required">*</span></label>
+              <input type="number" id="jumlah_siswa" name="jumlah_siswa" placeholder="540" required>
+            </div>
+
+            <!-- Alamat Sekolah -->
+            <div class="form-group form-group--full">
+              <label for="alamat_sekolah">Alamat sekolah <span class="required">*</span></label>
+              <textarea id="alamat_sekolah" name="alamat_sekolah" rows="3" placeholder="Tuliskan alamat lengkap sekolah" required></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Section 2: Kontak PIC ====== -->
+        <section class="form-section" id="section-pic">
+          <div class="section-header">
+            <div class="section-number">2</div>
+            <div>
+              <h2>Kontak penanggung jawab</h2>
+              <p>Isi kontak orang yang paling tepat untuk dihubungi saat kami menindaklanjuti pendaftaran ini.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- Nama PIC -->
+            <div class="form-group">
+              <label for="nama_pic">Nama PIC <span class="required">*</span></label>
+              <input type="text" id="nama_pic" name="nama_pic" placeholder="Nama penanggung jawab" required>
+            </div>
+
+            <!-- Jabatan PIC -->
+            <div class="form-group">
+              <label for="jabatan_pic">Jabatan PIC <span class="required">*</span></label>
+              <input type="text" id="jabatan_pic" name="jabatan_pic" placeholder="Kepala Sekolah / TU / Operator" required>
+            </div>
+
+            <!-- Email PIC -->
+            <div class="form-group">
+              <label for="email_pic">Email PIC <span class="required">*</span></label>
+              <input type="email" id="email_pic" name="email_pic" placeholder="pic@sekolah.sch.id" required>
+            </div>
+
+            <!-- WhatsApp PIC -->
+            <div class="form-group">
+              <label for="whatsapp_pic">WhatsApp PIC <span class="required">*</span></label>
+              <input type="tel" id="whatsapp_pic" name="whatsapp_pic" placeholder="08xxxxxxxxxx" required>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Section 3: Kebutuhan Sekolah ====== -->
+        <section class="form-section" id="section-kebutuhan">
+          <div class="section-header">
+            <div class="section-number">3</div>
+            <div>
+              <h2>Kebutuhan sekolah</h2>
+              <p>Bagian ini membantu kami memahami kebutuhan awal yang paling relevan untuk sekolah Anda.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- Nama singkat sekolah -->
+            <div class="form-group form-group--full">
+              <label for="slug_sekolah">Nama singkat sekolah untuk alamat SchoolPro <span class="required">*</span></label>
+              <div class="input-suffix-wrapper">
+                <input type="text" id="slug_sekolah" name="slug_sekolah" placeholder="sman1-bandung" required>
+                <span class="input-suffix">.schoolpro.id</span>
+              </div>
+              <span class="form-hint">Contoh: <code>sman1-bandung.schoolpro.id</code>. Ini membantu kami menyiapkan alamat awal sekolah Anda di SchoolPro.</span>
+            </div>
+
+            <!-- Sumber Lead -->
+            <div class="form-group">
+              <label for="sumber_lead">Sumber lead <span class="required">*</span></label>
+              <div class="select-wrapper">
+                <select id="sumber_lead" name="sumber_lead" required>
+                  <option value="" disabled selected>Pilih sumber lead</option>
+                  <option value="Google">Google / Pencarian</option>
+                  <option value="Media Sosial">Media Sosial</option>
+                  <option value="Rekomendasi Sekolah Lain">Rekomendasi Sekolah Lain</option>
+                  <option value="WhatsApp/Telepon">WhatsApp / Telepon</option>
+                  <option value="Webinar/Event">Webinar / Event</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+                <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
+
+            <!-- Kebutuhan Utama -->
+            <div class="form-group">
+              <label for="kebutuhan_utama">Kebutuhan utama <span class="required">*</span></label>
+              <textarea id="kebutuhan_utama" name="kebutuhan_utama" rows="3" placeholder="Contoh: kami ingin mulai dari website sekolah yang mudah dikelola, lalu lanjut ke PPDB online." required></textarea>
+            </div>
+
+            <!-- Catatan Tambahan -->
+            <div class="form-group form-group--full">
+              <label for="catatan">Catatan tambahan <span class="optional">Opsional</span></label>
+              <textarea id="catatan" name="catatan" rows="3" placeholder="Target waktu launching, kebutuhan pelatihan, atau catatan lain yang ingin disampaikan."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== Footer / Submit ====== -->
+        <div class="form-footer">
+          <p class="form-disclaimer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Dengan mengirim formulir ini, sekolah Anda masuk ke tahap konsultasi dan peninjauan awal bersama tim SchoolPro. Kami akan menindaklanjuti melalui kontak yang Anda isi di atas.
+          </p>
+          <button type="submit" class="btn-submit" id="btn-submit">
+            <span class="btn-submit-text">Kirim pendaftaran sekolah</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <span class="btn-submit-loader" aria-hidden="true"></span>
+          </button>
+        </div>
+
+      </form>
+
+      <!-- ========================
+           Success State
+           ======================== -->
+      <div class="success-state" id="success-state" hidden>
+        <div class="success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h2>Pendaftaran Berhasil Dikirim!</h2>
+        <p>Terima kasih telah mendaftarkan sekolah Anda ke SchoolPro. Tim kami akan menghubungi Anda melalui WhatsApp atau email dalam 1×24 jam kerja.</p>
+        <a href="https://schoolpro.id" class="btn-back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          Kembali ke SchoolPro
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================
+       Footer
+       ======================== -->
+  <footer class="form-page-footer">
+    <div class="container">
+      <p>&copy; 2026 SchoolPro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
